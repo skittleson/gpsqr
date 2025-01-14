@@ -10,7 +10,9 @@ window.onload = function () {
                 const { latitude, longitude } = position.coords;
                 const truncatedLat = parseFloat(latitude.toFixed(8));
                 const truncatedLong = parseFloat(longitude.toFixed(8));
-                const timeNow = new Date().toLocaleString();
+
+                // use RFC 3339 for timestamp data
+                const timeNow = new Date().toISOString();
 
                 // RFC 5870 geo uri
                 const gpsData = `geo:${truncatedLat},${truncatedLong}?ts=${timeNow}`;

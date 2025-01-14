@@ -8,12 +8,14 @@
 - **QR Code Generation**: Generates a QR code based on your GPS coordinates and timestamp.
 - **Responsive Design**: Optimized for both mobile and desktop devices.
 - **Print-Friendly**: Easily printable without unnecessary elements.
+- **RFC Friendly**: Encodes with RFC5870 (geo uri) and RFC3339 (datetime iso string)
 
 ## How to Use
 
 1. **Open the Application**: You can access the application by clicking [here](https://skittleson.github.io/gpsqr/).
 2. **Generate QR Code**: On page load, the app will automatically fetch your GPS coordinates and generate a QR code. If you want to manually trigger the generation, simply refresh the page.
 3. **View Details**: Click on the 🗺️ icon to expand and view your location details along with the timestamp.
+4. You can scan the QR code with any QR code reader to view the GPS data.
 
 ## Technical Details
 
