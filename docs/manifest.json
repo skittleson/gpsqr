@@ -1,0 +1,9 @@
+{
+    "name": "GPS QR Code",
+    "short_name": "GPSQR",
+    "description": "A PWA to generate QR codes from GPS data.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007BFF"
+}

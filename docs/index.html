@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>GPS QR Code</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        /* Mobile-first approach */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+
+        /* Make QR code the main element */
+        #qrcode {
+            display: block;
+            width: 100%;
+            padding: 1%;
+        }
+
+        #qrcode>img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        p {
+            color: #333;
+            margin: 5px;
+        }
+
+        main {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="no-print">GPS QR Code</header>
+    <main>
+        <div id="qrcode">loading ...</div>
+        <details class="no-print">
+            <summary>🗺️</summary>
+            <p id="locationInfo"></p>
+            <p id="timestamp"></p>
+        </details>
+    </main>
+    <script src="qr.js"></script>
+    <script src="app.js"></script>
+
+    <style>
+        @media (min-width: 768px) {
+            #qrcode {
+                max-width: 600px;
+            }
+        }
+
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</body>
+
+</html>
