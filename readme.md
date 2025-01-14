@@ -1,6 +1,6 @@
 # GPS QR Code Generator
 
-Welcome to the **GPS QR Code Generator**! This application generates a QR code containing your current latitude and longitude, along with the timestamp of when the QR code was generated.
+**GPS QR Code Generator** application generates a QR code containing your current latitude and longitude, along with the timestamp of when the QR code was generated. [Use the live version](https://skittleson.github.io/gpsqr/)
 
 ## Features
 

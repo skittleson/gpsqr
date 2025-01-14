@@ -20,6 +20,11 @@
             background: #333;
             color: white;
             padding: 1rem;
+            font-size: larger;
+        }
+        header > details > p {
+            color: white;
+            font-size: small;
         }
 
         /* Make QR code the main element */
@@ -48,14 +53,16 @@
 </head>
 
 <body>
-    <header class="no-print">GPS QR Code</header>
-    <main>
-        <div id="qrcode">loading ...</div>
+    <header class="no-print">
         <details class="no-print">
-            <summary>🗺️</summary>
+            <summary>GPS QR Code</summary>
             <p id="locationInfo"></p>
             <p id="timestamp"></p>
         </details>
+    </header>
+    <main>
+        <div id="qrcode">loading ...</div>
+        
     </main>
     <script src="qr.js"></script>
     <script src="app.js"></script>
